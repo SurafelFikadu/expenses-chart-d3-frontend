@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-red">
+        <div>
+          <span>My balance</span>
+          <h2>$921.48</h2>
+        </div>
+        <div class="balls">
+          <div class="black-ball ball"></div>
+          <div class="white-ball ball"></div>
+        </div>
+      </div>
+
+      <div class="space"></div>
+
+      <main>
+        <h2>Spending - last 7 days</h2>
+        <div class="main"></div>
+
+        <hr />
+
+        <div class="bottom">
+          <div>
+            <span class="cyan">Total this month</span>
+            <h1>$478.33</h1>
+          </div>
+          <div>
+            <b>+2.4%</b>
+            <p class="cyan">from last month</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./0-d3-min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(27, 66%, 92%);
+    font-family: "DM Sans", serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+}
+
+
+/* top */
+
+.top-red {
+    display: flex;
+    background-color: hsl(10, 79%, 65%);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+.top-red .ball {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.ball.black-ball {
+    background-color: black;
+    margin-left: -10px;
+}
+
+.ball.white-ball {
+    border: 2px solid white;
+    z-index: 100;
+}
+
+.top-red>.balls {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* space between */
+.space {
+    height: 30px;
+}
+
+/* ----- */
+main {
+    background-color: hsl(33, 100%, 98%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+main>.main {
+    margin: 30px 0;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+hr {
+    margin: 30px 0;
+    border: none;
+    height: 2px;
+    background-color: hsl(186, 34%, 60%);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.bottom .cyan {
+    color: hsl(186, 34%, 60%);
+}
+
+/* bar */
+.bar {
+    width: 52px;
+    height: 100px;
+    margin: 9px;
+    display: inline-block;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bar:hover {
+    opacity: 0.7;
+}
+
+.bar.bar-2 {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.day {
+    color: hsl(186, 34%, 60%);
+    margin: 0px 25px;
+}
+
+.day-0 {
+    margin: 0px 20px;
+}
+
+
+.amount {
+    position: absolute;
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    display: none;
+}
+
+.amount-0 {
+    margin-top: -125px;
+    margin-left: 5px;
+}
+
+.amount-1 {
+    margin-top: -180px;
+    margin-left: 75px;
+}
+
+.amount-2 {
+    margin-top: -230px;
+    margin-left: 145px;
+}
+
+.amount-3 {
+    margin-top: -167px;
+    margin-left: 215px;
+}
+
+.amount-4 {
+    margin-top: -145px;
+    margin-left: 285px;
+}
+
+.amount-5 {
+    margin-top: -205px;
+    margin-left: 355px;
+}
+
+.amount-6 {
+    margin-top: -150px;
+    margin-left: 425px;
+}
+
+.bar-0:hover~.amount-0 {
+    display: block;
+}
+
+.bar-1:hover~.amount-1 {
+    display: block;
+}
+
+.bar-2:hover~.amount-2 {
+    display: block;
+}
+
+.bar-3:hover~.amount-3 {
+    display: block;
+}
+
+.bar-4:hover~.amount-4 {
+    display: block;
+}
+
+.bar-5:hover~.amount-5 {
+    display: block;
+}
+
+.bar-6:hover~.amount-6 {
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 370px;
+    }
+
+    .bar {
+        width: 33px;
+        margin: 7px;
+    }
+
+    .amount {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .amount-0 {
+        margin-top: -115px;
+        margin-left: 0px;
+    }
+
+    .amount-1 {
+        margin-top: -170px;
+        margin-left: 48px;
+    }
+
+    .amount-2 {
+        margin-top: -220px;
+        margin-left: 95px;
+    }
+
+    .amount-3 {
+        margin-top: -157px;
+        margin-left: 142px;
+    }
+
+    .amount-4 {
+        margin-top: -133px;
+        margin-left: 188px;
+    }
+
+    .amount-5 {
+        margin-top: -195px;
+        margin-left: 235px;
+    }
+
+    .amount-6 {
+        margin-top: -140px;
+        margin-left: 280px;
+    }
+
+    .day {
+        margin: 0px 15px;
+        font-size: 14px;
+    }
+
+    .day-0 {
+        margin: 0px 10px;
+    }
+}
+
+
+
+/* .bars {
+    border-radius: 50%;
+    background-color: blue;
+} */
+
+/* .bars:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.amount {
+    display: none;
+    background-color: black;
+}
+
+.bars-0:hover~.amount-0 {
+    display: block;
+}
+
+.bars-1:hover~.amount-1 {
+    display: block;
+}
+
+.bars-2:hover~.amount-2 {
+    display: block;
+}
+
+.bars-3:hover~.amount-3 {
+    display: block;
+}
+
+.bars-4:hover~.amount-4 {
+    display: block;
+}
+
+.bars-5:hover~.amount-5 {
+    display: block;
+}
+
+.bars-6:hover~.amount-6 {
+    display: block;
+} */
